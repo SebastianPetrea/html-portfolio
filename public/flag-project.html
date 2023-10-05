@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    .flag{
+      display: flex;
+      position: relative;
+      width: 900px;
+      height: 600px;
+      background-color: #ce1126;
+      margin-bottom: 10px;
+    }
+    .flag > div{
+      background-color: #002868;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 150px;
+    }
+    .flag > div >div{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      top: 50px;
+      left: 350px;
+      background-color: white;
+      position: absolute;
+    }
+    .flag>div div p{
+      color: black;
+    }
+
+
+    .benim-flag{
+      display: flex;
+      margin-bottom: 10px;
+    }
+    #green{
+      position: absolute;
+      background-color: #008751;
+      width: 300px;
+      height: 400px;
+      margin: 0px;
+    }
+    #yellow{
+      position: relative;
+      background-color: #fcd116;      
+      width: 600px;
+      height: 200px;
+      left: 300px;
+      margin: 0px;      
+    }    
+    #red{
+      position: relative;
+      background-color: #e8112d;
+      left: 300px;
+      top: 200px;
+      width: 600px;
+      height: 200px;
+      margin: 0px;
+    }
+
+    .german-flag{
+      margin-top: 210px;
+    }
+    #black{
+      display: flex;
+      position: absolute;
+      width: 900px;
+      height: 200px;
+      background-color: #000000;
+      margin: 0px;
+          
+    }
+    #red-color{
+      position: relative;
+      margin: 0px;
+      background-color: #dd0000;
+      width: 900px;
+      height: 200px;
+      top: 200px;
+    }      
+    #yellow-color{
+      position: relative;
+      margin: 0px;
+      background-color: #ffce00;
+      width: 900px;
+      height: 150px;
+      top: 200px;
+    }    
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <div>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="benim-flag">
+    <div id="green">
+        <div id="red"></div>
+    </div>
+    <div id="yellow"></div>
+  </div>
+
+  <div class="german-flag">
+    <div id="black">sdfs</div>
+    <div id="red-color">
+        <div id="yellow-color"></div>
+    </div> 
+</div>
+  
+</body>
+
+</html>
