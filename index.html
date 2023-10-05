@@ -1,36 +1,69 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
+    <style>
+        body {
+            background-color: #219C90;
+        }
+        h1{
+            margin-bottom: 0;
+        }
+        #h1-div{
+            font-size: 40px;
+            border-bottom: 5px dotted wheat;
+            border-bottom-width: 0.7rem;
+            margin-bottom: 50px;
+        }
+        .project-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0 auto ;
+            column-gap: 50px;
+            border: 10px solid black;
+            max-width: 75%;
+        }
+        
+        #projects-div{
+            font-size: 2rem;
+        }
+        .anchor{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+        }
+        .list{
+            list-style-type: none;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-    
     <div class="project-section">
-        <div id="h1-div">
-            <h1>Sebastian's Portfolio</h1>
+        <div class="container">
+            <div id="h1-div">
+                <h1>Sebastian's Portfolio</h1>
+            </div>
         </div>
         <div id="projects-div">
-            <div class="projects" id="small-projects">
-                <a href="./small.html">small projects</a>
-            </div>
-            <div class="projects" id="medium-projects">
-                <a href="./medium.html">medium projects</a>
-            </div>
-            <div class="projects" id="big-projects">
-                <a href="./big.html">big-projects</a>
-            </div>
+            <ol>
+                <li class="list"><a class="anchor" href="./small.html">Movie Ranking Project</a></li>
+                <li class="list"><a class="anchor" href="./small.html">Movie Ranking Project</a></li>
+            </ol>
+        </div>
+
         </div>
         
     </div>
     
     <footer id="footer">
-            <h4 id="about-me"><a href="./public/about.html">About me</a></h4>
-            <h4 id="contact-me"><a href="./public/contact.html">Contact me</a></h4>
+        <h4 id="about-me"><a href="./public/about.html">About me</a></h4>
+        <h4 id="contact-me"><a href="./public/contact.html">Contact me</a></h4>
     </footer>
-    
 </body>
 </html>
